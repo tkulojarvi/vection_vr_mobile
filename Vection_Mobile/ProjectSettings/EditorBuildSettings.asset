@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: a4f5a922d8ef24f408a8c63b398c165f
+  - enabled: 1
+    path: Assets/Scenes/TAPE_1.unity
+    guid: bafa6e0cdecb2cb4991d422e5020995f
+  - enabled: 1
+    path: Assets/Scenes/TAPE_2.unity
+    guid: 295731618c2aec14b97e45bf39d15672
+  - enabled: 1
+    path: Assets/Scenes/TAPE_3.unity
+    guid: 7ffa752c1df682f46b28c9a36f0acf5f
+  - enabled: 1
+    path: Assets/Scenes/TAPE_4.unity
+    guid: 20f4fc9fbc8adc14c864b73aa981b1f9
+  - enabled: 1
+    path: Assets/Scenes/TAPE_5.unity
+    guid: e92a0f89f7e9e1b42b6d5be7566a1e8f
+  - enabled: 1
+    path: Assets/Scenes/TAPE_6.unity
+    guid: 730265ba55cc91c4aa10a77787ac028e
+  - enabled: 1
+    path: Assets/Scenes/TAPE_7.unity
+    guid: 50fb275466693064a8a91cb1d515c2b4
+  - enabled: 1
+    path: Assets/Scenes/TAPE_8.unity
+    guid: 992ecd7a1c43ec8419a955e97083999c
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4869f97700e7da64bbbbbb0a8251b351, type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 82e8b9941fd3c7440aa9d1fc7bc557ab, type: 2}
