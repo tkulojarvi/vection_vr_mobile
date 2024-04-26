@@ -174,19 +174,19 @@ public class ObjectController : MonoBehaviour
 
     // custom 
 
-    public float timeRemaining = 30f;
-    public float originalTimeRemaining = 30f;
+    private float timeRemaining = 3f;
+    private float originalTimeRemaining = 3f;
     private bool timerIsRunning = false;
 
 
     public Color emissionColor = Color.blue; // Set the color you want for emission
-    public float emissionIntensity = 1f; // Set the intensity of emission when it's turned on
+    private float emissionIntensity = 1f; // Set the intensity of emission when it's turned on
     private bool emissionOn = false;
 
 
-    public float pulseSpeed = 1.0f; // Adjust the speed of the pulse
-    public float minScale = 0.95f; // Minimum scale of the object
-    public float maxScale = 1.05f; // Maximum scale of the object
+    private float pulseSpeed = 1.0f; // Adjust the speed of the pulse
+    private float minScale = 0.95f; // Minimum scale of the object
+    private float maxScale = 1.05f; // Maximum scale of the object
     private Vector3 baseScale;
 
 

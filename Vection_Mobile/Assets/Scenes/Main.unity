@@ -175,14 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: 1c888336bbb38044fb7500827c9d2c30, type: 2}
-  timeRemaining: 30
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.95
-  maxScale: 1.05
   spinObject: {fileID: 1302428991}
 --- !u!135 &138120820
 SphereCollider:
@@ -329,14 +322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: b5f3136c0efcb40b18050a014202c92c, type: 2}
-  timeRemaining: 3
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.5
-  maxScale: 1.5
   spinObject: {fileID: 0}
 --- !u!135 &148680889
 SphereCollider:
@@ -460,14 +446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: 026c99290ad2d42e98195d21d1c5a21d, type: 2}
-  timeRemaining: 3
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.5
-  maxScale: 1.5
   spinObject: {fileID: 0}
 --- !u!135 &150093457
 SphereCollider:
@@ -629,14 +608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: 026c99290ad2d42e98195d21d1c5a21d, type: 2}
-  timeRemaining: 3
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.5
-  maxScale: 1.5
   spinObject: {fileID: 0}
 --- !u!135 &226566789
 SphereCollider:
@@ -878,14 +850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: 026c99290ad2d42e98195d21d1c5a21d, type: 2}
-  timeRemaining: 3
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.5
-  maxScale: 1.5
   spinObject: {fileID: 0}
 --- !u!135 &337571227
 SphereCollider:
@@ -1128,14 +1093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: 7fab864d28144eb44b8d2d2254a77502, type: 2}
-  timeRemaining: 30
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.95
-  maxScale: 1.05
   spinObject: {fileID: 1302428991}
 --- !u!135 &394853276
 SphereCollider:
@@ -1282,14 +1240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: b5f3136c0efcb40b18050a014202c92c, type: 2}
-  timeRemaining: 3
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.5
-  maxScale: 1.5
   spinObject: {fileID: 0}
 --- !u!135 &461419444
 SphereCollider:
@@ -1413,14 +1364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: b5f3136c0efcb40b18050a014202c92c, type: 2}
-  timeRemaining: 3
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.5
-  maxScale: 1.5
   spinObject: {fileID: 0}
 --- !u!135 &529942168
 SphereCollider:
@@ -1544,14 +1488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: b5f3136c0efcb40b18050a014202c92c, type: 2}
-  timeRemaining: 3
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.5
-  maxScale: 1.5
   spinObject: {fileID: 0}
 --- !u!135 &538512716
 SphereCollider:
@@ -1675,14 +1612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: b5f3136c0efcb40b18050a014202c92c, type: 2}
-  timeRemaining: 3
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.5
-  maxScale: 1.5
   spinObject: {fileID: 0}
 --- !u!135 &624214800
 SphereCollider:
@@ -1867,14 +1797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: de0e03e006cda7d428da91e9c2a53593, type: 2}
-  timeRemaining: 30
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.95
-  maxScale: 1.05
   spinObject: {fileID: 1302428991}
 --- !u!135 &859595883
 SphereCollider:
@@ -2000,14 +1923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: 8fdaf2cc4f0a79846b8e9c181cbddbae, type: 2}
-  timeRemaining: 30
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.95
-  maxScale: 1.05
   spinObject: {fileID: 1302428991}
 --- !u!135 &901216729
 SphereCollider:
@@ -2128,7 +2044,7 @@ Transform:
   m_GameObject: {fileID: 907292807}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.6, z: 0}
+  m_LocalPosition: {x: 0, y: 1.6, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2186,14 +2102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: b5f3136c0efcb40b18050a014202c92c, type: 2}
-  timeRemaining: 3
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.5
-  maxScale: 1.5
   spinObject: {fileID: 0}
 --- !u!135 &915994825
 SphereCollider:
@@ -2371,14 +2280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: 9292dbc4dec99354b8a8832928818dfb, type: 2}
-  timeRemaining: 30
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.95
-  maxScale: 1.05
   spinObject: {fileID: 1302428991}
 --- !u!224 &955127926
 RectTransform:
@@ -2472,14 +2374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: 026c99290ad2d42e98195d21d1c5a21d, type: 2}
-  timeRemaining: 3
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.5
-  maxScale: 1.5
   spinObject: {fileID: 0}
 --- !u!135 &956711309
 SphereCollider:
@@ -2769,14 +2664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: 026c99290ad2d42e98195d21d1c5a21d, type: 2}
-  timeRemaining: 3
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.5
-  maxScale: 1.5
   spinObject: {fileID: 0}
 --- !u!135 &1176864801
 SphereCollider:
@@ -3189,14 +3077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: 92d2e7fcab99da14f99d7c0678df25bb, type: 2}
-  timeRemaining: 30
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.95
-  maxScale: 1.05
   spinObject: {fileID: 1302428991}
 --- !u!135 &1312977875
 SphereCollider:
@@ -3555,14 +3436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: 026c99290ad2d42e98195d21d1c5a21d, type: 2}
-  timeRemaining: 3
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.5
-  maxScale: 1.5
   spinObject: {fileID: 0}
 --- !u!135 &1490385954
 SphereCollider:
@@ -3686,14 +3560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: 026c99290ad2d42e98195d21d1c5a21d, type: 2}
-  timeRemaining: 3
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.5
-  maxScale: 1.5
   spinObject: {fileID: 0}
 --- !u!135 &1545069430
 SphereCollider:
@@ -3999,14 +3866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: b5f3136c0efcb40b18050a014202c92c, type: 2}
-  timeRemaining: 3
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.5
-  maxScale: 1.5
   spinObject: {fileID: 0}
 --- !u!135 &1625410182
 SphereCollider:
@@ -4207,14 +4067,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: 3916c1fcdb2345948beddeb9049bb0f6, type: 2}
-  timeRemaining: 30
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.95
-  maxScale: 1.05
   spinObject: {fileID: 1302428991}
 --- !u!135 &1781479677
 SphereCollider:
@@ -4454,14 +4307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: 026c99290ad2d42e98195d21d1c5a21d, type: 2}
-  timeRemaining: 3
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.5
-  maxScale: 1.5
   spinObject: {fileID: 0}
 --- !u!135 &2028980172
 SphereCollider:
@@ -4664,14 +4510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: de0e03e006cda7d428da91e9c2a53593, type: 2}
-  timeRemaining: 30
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.95
-  maxScale: 1.05
   spinObject: {fileID: 1302428991}
 --- !u!135 &2136446953
 SphereCollider:
@@ -4818,14 +4657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0fad8e3b2754aaeb18724ea18d2a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InactiveMaterial: {fileID: 2100000, guid: b5f3136c0efcb40b18050a014202c92c, type: 2}
-  timeRemaining: 3
-  originalTimeRemaining: 30
   emissionColor: {r: 0, g: 0, b: 1, a: 1}
-  emissionIntensity: 1
-  pulseSpeed: 1
-  minScale: 0.5
-  maxScale: 1.5
   spinObject: {fileID: 0}
 --- !u!135 &2138964493
 SphereCollider:
