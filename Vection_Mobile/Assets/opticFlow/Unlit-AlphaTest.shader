@@ -34,6 +34,7 @@ SubShader {
             struct v2f {
                 float4 vertex : SV_POSITION;
                 float2 texcoord : TEXCOORD0;
+                float3 pos : COLOR;
                 UNITY_FOG_COORDS(1)
                 UNITY_VERTEX_OUTPUT_STEREO
             };
@@ -48,6 +49,7 @@ SubShader {
                 UNITY_SETUP_INSTANCE_ID(v);
                 UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
                 o.vertex = UnityObjectToClipPos(v.vertex);
+                o.pos = mul(unity_ObjectToWorld, float4(v.vertex.xyz, 1.0)).xyz;
                 o.texcoord = TRANSFORM_TEX(v.texcoord, _MainTex);
                 UNITY_TRANSFER_FOG(o,o.vertex);
 
@@ -58,8 +60,7 @@ SubShader {
             {
                 fixed4 col = tex2D(_MainTex, i.texcoord);
                 clip(col.a - _Cutoff);
-                float zDepth = i.vertex.z / i.vertex.w;
-                col = col * zDepth * zDepth * 100000000;
+                col = col + 0.1 - abs(50-i.pos.z)*0.02 - abs(i.pos.x)*0.02 - abs(i.pos.y)*0.02;
                 UNITY_APPLY_FOG(i.fogCoord, col);
                 return col;
             }
