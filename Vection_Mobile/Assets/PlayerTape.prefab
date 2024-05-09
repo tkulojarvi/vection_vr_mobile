@@ -175,6 +175,7 @@ MonoBehaviour:
   accelerationTime: 0
   randomAccelerationSwing: 0
   decelerationTime: 0
+  flow: {fileID: 2100000, guid: ae9292b0059477647bed9bfbc79f2d7a, type: 2}
 --- !u!1001 &18647234474229866
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ Shader "Unlit/Transparent Cutout Fade" {
 Properties {
     _MainTex ("Base (RGB) Trans (A)", 2D) = "white" {}
     _Cutoff ("Alpha cutoff", Range(0,1)) = 0.5
+    _Player ("Player Position", Vector) = (50,0,0)
 }
 SubShader {
     Tags {"Queue"="AlphaTest" "IgnoreProjector"="True" "RenderType"="TransparentCutout"}
@@ -42,6 +43,7 @@ SubShader {
             sampler2D _MainTex;
             float4 _MainTex_ST;
             fixed _Cutoff;
+            float4 _Player;
 
             v2f vert (appdata_t v)
             {
@@ -59,8 +61,13 @@ SubShader {
             fixed4 frag (v2f i) : SV_Target
             {
                 fixed4 col = tex2D(_MainTex, i.texcoord);
-                clip(col.a - _Cutoff);
-                col = col + 0.1 - abs(50-i.pos.z)*0.02 - abs(i.pos.x)*0.02 - abs(i.pos.y)*0.02;
+                float3 dist;
+                dist.x = abs(_Player.x - i.pos.x);
+                dist.y = abs(_Player.y - i.pos.y);
+                dist.z = abs(_Player.z - i.pos.z);
+                float distlen = length(dist);
+                clip(col.a - clamp(_Cutoff - distlen*0.015, 0.1, 1.0));
+                col = (col - max(max(dist.x,dist.y),dist.z)*0.04) * col.a;
                 UNITY_APPLY_FOG(i.fogCoord, col);
                 return col;
             }
