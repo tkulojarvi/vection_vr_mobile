@@ -22,6 +22,8 @@ public class Flow : MonoBehaviour
     float timer = 0;
     Vector3 startingPos;
     public Material flow;
+    bool rotationCorrection = true;
+
     private void Start()
     {
         startingPos = transform.position;
@@ -31,6 +33,14 @@ public class Flow : MonoBehaviour
     }
     void Update()
     {
+        Transform c = transform.GetChild(0);
+        if (rotationCorrection && c.localRotation != Quaternion.identity)
+        {
+            float xrot = transform.rotation.eulerAngles.x;
+            transform.rotation *= Quaternion.Inverse(c.localRotation);
+            transform.rotation = Quaternion.Euler(xrot, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
+            rotationCorrection = false;
+        }
         timer += Time.deltaTime;
         if (timer < linearTime){
             curSpeed = speed;
