@@ -21,6 +21,9 @@ public class Flow : MonoBehaviour
     float maxRotation = 0;
     float timer = 0;
     Vector3 startingPos;
+    public Material flow;
+    bool rotationCorrection = true;
+
     private void Start()
     {
         startingPos = transform.position;
@@ -30,6 +33,14 @@ public class Flow : MonoBehaviour
     }
     void Update()
     {
+        Transform c = transform.GetChild(0);
+        if (rotationCorrection && c.localRotation != Quaternion.identity)
+        {
+            float xrot = transform.rotation.eulerAngles.x;
+            transform.rotation *= Quaternion.Inverse(c.localRotation);
+            transform.rotation = Quaternion.Euler(xrot, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
+            rotationCorrection = false;
+        }
         timer += Time.deltaTime;
         if (timer < linearTime){
             curSpeed = speed;
@@ -55,5 +66,6 @@ public class Flow : MonoBehaviour
         move = Mathf.Repeat(move + curSpeed * Time.deltaTime, gap);
         transform.position = startingPos + Vector3.forward * move;
         transform.Rotate(0,0,curRotation * Time.deltaTime, Space.World);
+        flow.SetVector("_Player", new Vector4(transform.position.x, transform.position.y, transform.position.z));
     }
 }

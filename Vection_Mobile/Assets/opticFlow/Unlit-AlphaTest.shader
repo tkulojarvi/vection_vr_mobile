@@ -9,6 +9,7 @@ Shader "Unlit/Transparent Cutout Fade" {
 Properties {
     _MainTex ("Base (RGB) Trans (A)", 2D) = "white" {}
     _Cutoff ("Alpha cutoff", Range(0,1)) = 0.5
+    _Player ("Player Position", Vector) = (50,0,0)
 }
 SubShader {
     Tags {"Queue"="AlphaTest" "IgnoreProjector"="True" "RenderType"="TransparentCutout"}
@@ -34,6 +35,7 @@ SubShader {
             struct v2f {
                 float4 vertex : SV_POSITION;
                 float2 texcoord : TEXCOORD0;
+                float3 pos : COLOR;
                 UNITY_FOG_COORDS(1)
                 UNITY_VERTEX_OUTPUT_STEREO
             };
@@ -41,6 +43,7 @@ SubShader {
             sampler2D _MainTex;
             float4 _MainTex_ST;
             fixed _Cutoff;
+            float4 _Player;
 
             v2f vert (appdata_t v)
             {
@@ -48,6 +51,7 @@ SubShader {
                 UNITY_SETUP_INSTANCE_ID(v);
                 UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
                 o.vertex = UnityObjectToClipPos(v.vertex);
+                o.pos = mul(unity_ObjectToWorld, float4(v.vertex.xyz, 1.0)).xyz;
                 o.texcoord = TRANSFORM_TEX(v.texcoord, _MainTex);
                 UNITY_TRANSFER_FOG(o,o.vertex);
 
@@ -57,9 +61,13 @@ SubShader {
             fixed4 frag (v2f i) : SV_Target
             {
                 fixed4 col = tex2D(_MainTex, i.texcoord);
-                clip(col.a - _Cutoff);
-                float zDepth = i.vertex.z / i.vertex.w;
-                col = col * zDepth * zDepth * 100000000;
+                float3 dist;
+                dist.x = abs(_Player.x - i.pos.x);
+                dist.y = abs(_Player.y - i.pos.y);
+                dist.z = abs(_Player.z - i.pos.z);
+                float distlen = length(dist);
+                clip(col.a - clamp(_Cutoff - distlen*0.015, 0.1, 1.0));
+                col = (col - max(max(dist.x,dist.y),dist.z)*0.04) * col.a;
                 UNITY_APPLY_FOG(i.fogCoord, col);
                 return col;
             }
